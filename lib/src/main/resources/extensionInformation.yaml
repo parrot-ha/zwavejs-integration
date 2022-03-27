@@ -1,0 +1,9 @@
+id: 2605621b-3301-41fa-abd0-1dfd41acbd13
+name: ZWave-JS Extension
+minHubVersion: 0.2.0
+author: Parrot HA
+version: 0.1.0
+licenseFile: TBD
+releaseNotes: TBD
+description: Provides an integration with zwave-js server.
+category: INTEGRATIONS

@@ -1,0 +1,4 @@
+id: 873c0847-0a0e-4c95-98ba-93949434d2ed
+name: Z-Wave Integration via ZWave JS Server
+className: com.parrotha.integration.zwavejs.ZWaveJSIntegration
+description: Provides an integration with zwave-js server that allows control of zwave devices.
