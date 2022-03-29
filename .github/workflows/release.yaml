@@ -20,6 +20,9 @@ jobs:
         uses: gradle/wrapper-validation-action@v1
       - name: Build with Gradle
         run: ./gradlew build
+        env:
+          GITHUB_ACTOR: ${{secrets.GITHUB_ACTOR}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Upload Release
         uses: softprops/action-gh-release@v1
         with:
