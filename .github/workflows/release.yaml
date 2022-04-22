@@ -28,5 +28,5 @@ jobs:
         with:
           files: |
             ./lib/build/distributions/zwavejs-extension-*.zip
-            ./lib/build/resources/main/extensionInformation.yaml
-            ./lib/build/resources/main/integrationInformation.yaml
+            ./lib/build/resources/main/parrotExtension.yaml
+            ./lib/build/resources/main/parrotIntegration.yaml
