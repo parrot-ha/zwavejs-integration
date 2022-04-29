@@ -9,6 +9,7 @@
 plugins {
     id 'java-library'
     id 'java-library-distribution'
+    id 'groovy'
     id "com.github.hierynomus.license" version "0.15.0"
 }
 
@@ -42,6 +43,11 @@ repositories {
     gradlePluginPortal()
 }
 
+// thanks to https://stackoverflow.com/questions/20442626/how-can-i-specify-a-groovy-compilerconfig-using-gradle
+compileGroovy {
+    groovyOptions.configurationScript = file("config.groovy")
+}
+
 dependencies {
     implementation "org.java-websocket:Java-WebSocket:1.5.2"
 
@@ -50,6 +56,7 @@ dependencies {
     compileOnly 'com.parrotha:parrothub-integration-common:0.2.2'
     compileOnly 'com.parrotha:parrothub-zwave-common:0.2.2'
 
+    compileOnly "org.codehaus.groovy:groovy-all:3.0.9"
     compileOnly 'org.codehaus.groovy:groovy-json:3.0.9'
 
     compileOnly "org.apache.logging.log4j:log4j-slf4j-impl:2.14.0"

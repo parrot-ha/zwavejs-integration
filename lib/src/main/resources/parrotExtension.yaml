@@ -7,4 +7,5 @@ licenseFile: TBD
 releaseNotes: TBD
 description: Provides an integration with zwave-js server.
 category: INTEGRATIONS
+type: compiled
 packaging: jar
